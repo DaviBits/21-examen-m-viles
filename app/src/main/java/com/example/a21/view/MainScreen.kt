@@ -47,9 +47,9 @@ class MainScreen : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     screen(
                         tema = tema,
-                        onTemaChange = { tema = it },
+                        onTemaChange = {tema = it},
                         nombre = nombre,
-                        onNombreChange = { nombre = it },
+                        onNombreChange = {nombre =it },
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

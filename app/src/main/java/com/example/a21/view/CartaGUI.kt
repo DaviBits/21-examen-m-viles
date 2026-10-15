@@ -49,7 +49,6 @@ fun CartaGUI(
                 .border(1.dp, Color.Gray, forma)
                 .padding(6.dp)
         ) {
-            // Esquina superior izquierda
             EsquinaCarta(
                 rango = carta.rango.etiqueta,
                 simbolo = carta.palo.simbolo,
@@ -57,7 +56,6 @@ fun CartaGUI(
                 modifier = Modifier.align(Alignment.TopStart)
             )
 
-            // Palo grande al centro
             Text(
                 text = carta.palo.simbolo,
                 color = colorPalo,
@@ -75,7 +73,6 @@ fun CartaGUI(
             )
         }
     } else {
-        // Reverso: usa los colores del tema
         Box(
             modifier = modifier
                 .aspectRatio(5f / 7f)

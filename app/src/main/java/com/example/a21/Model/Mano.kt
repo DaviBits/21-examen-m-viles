@@ -35,6 +35,5 @@ class Mano(val objetivo: Int) {
 
     fun sePaso(): Boolean = puntos() > objetivo
 
-    // Dos cartas que suman justo el objetivo (en el 21 clásico: As + carta de 10)
     fun esBlackjack(): Boolean = listaCartas.size == 2 && puntos() == objetivo
 }

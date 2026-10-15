@@ -40,8 +40,8 @@ class Partida(
         }
     }
 
-    fun pedirCarta() {
-        if(estado == EstadoPartida.TERMINADA || !jugador.puedePedir()) return
+    fun pedirCarta(){
+        if(estado==EstadoPartida.TERMINADA || !jugador.puedePedir()) return
         jugador.recibirCarta(mazo.sacarCarta())
         if(jugador.mano.sePaso()){
             terminar()

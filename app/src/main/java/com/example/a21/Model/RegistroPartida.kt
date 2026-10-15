@@ -8,7 +8,6 @@ class RegistroPartida(
     val fechaHora: String,
     val empate: Boolean
 ) {
-    // Por ejemplo: "A♠ K♥ = 21"
     fun textoManoGanadora(): String {
         return manoGanadora.joinToString(" ") + " = " + puntosManoGanadora
     }
